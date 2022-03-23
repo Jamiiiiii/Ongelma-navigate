@@ -1,8 +1,12 @@
+drop database if exists opisk_n1tuno00;
+
+create database opisk_n1tuno00;
+
 use opisk_n1tuno00;
 
 create table tuoteryhma (
     trnro int primary key not null AUTO_INCREMENT,
-    trnimi char(30) not null
+    trnimi char(30) unique not null
 );
 
 create table tuote (
