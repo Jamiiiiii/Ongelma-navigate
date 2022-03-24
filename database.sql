@@ -9,6 +9,11 @@ create table tuoteryhma (
     trnimi char(30) unique not null
 );
 
+insert into tuoteryhma (trnimi) values ('Pils');
+insert into tuoteryhma (trnimi) values ('Pale Ale');
+insert into tuoteryhma (trnimi) values ('Vehnaolut');
+insert into tuoteryhma (trnimi) values ('Lager');
+
 create table tuote (
     tuotenro int primary key not null AUTO_INCREMENT,
     tuotenimi char(30) unique not null,
