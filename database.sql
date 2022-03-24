@@ -1,8 +1,8 @@
-drop database if exists opisk_n1tuno00;
+drop database if exists verkkokauppa;
 
-create database opisk_n1tuno00;
+create database verkkokauppa;
 
-use opisk_n1tuno00;
+use verkkokauppa;
 
 create table tuoteryhma (
     trnro int primary key not null AUTO_INCREMENT,
