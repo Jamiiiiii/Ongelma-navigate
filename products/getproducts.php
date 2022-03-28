@@ -18,9 +18,9 @@ try {
 
     header('HTTP/1.1 200 OK');
     echo json_encode(array(
-        "category" => $category['name'],
+        "category" => $category['trnimi'],
         "products" => $products
-    ));
+    ), JSON_PRETTY_PRINT);
 } catch(PDOException $pdoex) {
     returnError($pdoex);
 }
