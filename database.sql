@@ -11,7 +11,7 @@ create table tuoteryhma (
 
 insert into tuoteryhma (trnimi) values ('Pils');
 insert into tuoteryhma (trnimi) values ('Pale Ale');
-insert into tuoteryhma (trnimi) values ('Vehnaolut');
+insert into tuoteryhma (trnimi) values ('Wheat beer');
 insert into tuoteryhma (trnimi) values ('Lager');
 
 create table tuote (
