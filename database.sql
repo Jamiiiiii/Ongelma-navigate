@@ -16,7 +16,7 @@ insert into tuoteryhma (trnimi) values ('Lager');
 
 create table tuote (
     tuotenro int primary key not null AUTO_INCREMENT,
-    tuotenimi char(30) unique not null,
+    tuotenimi char(50) unique not null,
     hinta DECIMAL(5,2) not null,
     kuva varchar(50),
     kuvaus char(255),
@@ -25,5 +25,7 @@ create table tuote (
 );
 
 insert into tuote (tuotenimi, hinta, kuva, trnro) values ('Beer', 15.00, LOAD_FILE('C:/xampp/htdocs/verkkopalveluprojekti-backend/images/wheat-bottle-can.png'), 1);
-insert into tuote (tuotenimi, hinta, trnro) values ('Kalja', 10.10, 1);
-insert into tuote (tuotenimi, hinta, trnro) values ('Jee', 10.10, 1);
+insert into tuote (tuotenimi, hinta, trnro) values ('Kalja', 10.50, 1);
+insert into tuote (tuotenimi, hinta, trnro) values ('Jee', 29.99, 2);
+insert into tuote (tuotenimi, hinta, trnro) values ('More beer', 18.00, 3);
+insert into tuote (tuotenimi, hinta, trnro) values ('Kalajaa', 19.99, 4);
