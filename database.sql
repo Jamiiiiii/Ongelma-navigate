@@ -18,7 +18,7 @@ create table tuote (
     tuotenro int primary key not null AUTO_INCREMENT,
     tuotenimi char(50) unique not null,
     hinta DECIMAL(5,2) not null,
-    kuva varchar(50),
+    kuva char(50),
     kuvaus char(255),
     trnro int not null,
     foreign key (trnro) references tuoteryhma(trnro)
