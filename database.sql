@@ -24,8 +24,8 @@ create table tuote (
     foreign key (trnro) references tuoteryhma(trnro)
 );
 
-insert into tuote (tuotenimi, hinta, kuva, trnro) values ('Beer', 15.00, LOAD_FILE('C:/xampp/htdocs/verkkopalveluprojekti-backend/images/wheat-bottle-can.png'), 1);
-insert into tuote (tuotenimi, hinta, trnro) values ('Kalja', 10.50, 1);
-insert into tuote (tuotenimi, hinta, trnro) values ('Jee', 29.99, 2);
-insert into tuote (tuotenimi, hinta, trnro) values ('More beer', 18.00, 3);
-insert into tuote (tuotenimi, hinta, trnro) values ('Kalajaa', 19.99, 4);
+insert into tuote (tuotenimi, hinta, kuva, trnro) values ('Test beer', 15.00, LOAD_FILE('C:/xampp/htdocs/verkkopalveluprojekti-backend/images/wheat-bottle-can.png'), 1);
+insert into tuote (tuotenimi, hinta, trnro) values ('Test beer 1', 10.50, 1);
+insert into tuote (tuotenimi, hinta, trnro) values ('Test beer 2', 29.99, 2);
+insert into tuote (tuotenimi, hinta, trnro) values ('Test beer 3', 18.00, 3);
+insert into tuote (tuotenimi, hinta, trnro) values ('Test beer 4', 19.99, 4);
