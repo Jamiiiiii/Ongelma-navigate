@@ -24,7 +24,7 @@ create table product (
     foreign key (category_id) references category(id)
 );
 
-insert into product (name, price, image, category_id) values ('Test beer', 15.00, 'C:/xampp/htdocs/verkkopalveluprojekti-backend/images/wheat-bottle-can.png', 1);
+insert into product (name, price, image, category_id) values ('Test beer', 15.00, 'C:/xampp/htdocs/verkkopalveluprojekti-backend/products/images/wheat-bottle-can.png', 1);
 insert into product (name, price, category_id) values ('Test beer 1', 10.50, 1);
 insert into product (name, price, category_id) values ('Test beer 2', 29.99, 2);
 insert into product (name, price, category_id) values ('Test beer 3', 18.00, 3);
