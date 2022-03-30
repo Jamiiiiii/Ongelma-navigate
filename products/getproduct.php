@@ -8,7 +8,7 @@ $product_id = $parameters[1];
 
 try {
     $db = openDb();
-    $sql = "select * from tuote where tuotenro = $product_id";
+    $sql = "select * from product where id = $product_id";
     $query = $db->query($sql);
     $product = $query->fetch(PDO::FETCH_ASSOC);
 

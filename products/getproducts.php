@@ -8,17 +8,17 @@ $category_id = $parameters[1];
 
 try {
     $db = openDb();
-    $sql = "select * from tuoteryhma where trnro = $category_id";
+    $sql = "select * from category where id = $category_id";
     $query = $db->query($sql);
     $category = $query->fetch(PDO::FETCH_ASSOC);
 
-    $sql = "select * from tuote where trnro = $category_id";
+    $sql = "select * from product where category_id = $category_id";
     $query = $db->query($sql);
     $products = $query->fetchAll(PDO::FETCH_ASSOC);
 
     header('HTTP/1.1 200 OK');
     echo json_encode(array(
-        "category" => $category['trnimi'],
+        "category" => $category['name'],
         "products" => $products
     ), JSON_PRETTY_PRINT);
 } catch(PDOException $pdoex) {
