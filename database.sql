@@ -18,14 +18,27 @@ create table product (
     id int primary key not null AUTO_INCREMENT,
     name char(50) unique not null,
     price DECIMAL(5,2) not null,
-    image char(255),
+    image char(100),
     description char(255),
     category_id int not null,
     foreign key (category_id) references category(id)
 );
 
-insert into product (name, price, image, category_id) values ('Test beer', 15.00, 'C:/xampp/htdocs/verkkopalveluprojekti-backend/products/images/wheat-bottle-can.png', 1);
-insert into product (name, price, category_id) values ('Test beer 1', 10.50, 1);
-insert into product (name, price, category_id) values ('Test beer 2', 29.99, 2);
-insert into product (name, price, category_id) values ('Test beer 3', 18.00, 3);
-insert into product (name, price, category_id) values ('Test beer 4', 19.99, 4);
+insert into product (name, price, image, category_id) values ('Test beer', 15.00, 'wheat-bottle-can.png', 1);
+insert into product (name, price, image, category_id) values ('Test beer 1', 10.50, 'wheat-bottle-can.png', 1);
+insert into product (name, price, image, category_id) values ('Test beer 2', 29.99, 'wheat-bottle-can.png', 2);
+insert into product (name, price, image, category_id) values ('Test beer 3', 18.00, 'wheat-bottle-can.png', 3);
+insert into product (name, price, image, category_id) values ('Test beer 4', 19.99, 'wheat-bottle-can.png', 4);
+
+create table customer (
+    id int primary key not null AUTO_INCREMENT,
+    email char(255) unique not null,
+    pw char(255) not null,
+    fname char(30) not null,
+    lname char(50) not null,
+    streetname char(50) not null,
+    housenumber char(10) not null,
+    zip char(5) not null,
+    city char(30) not null,
+    phonenumber char(10) not null
+)
