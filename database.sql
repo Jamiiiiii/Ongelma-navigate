@@ -42,4 +42,4 @@ create table customer (
     zip char(5) not null,
     city char(30) not null,
     phonenumber char(10) not null
-)
+);
