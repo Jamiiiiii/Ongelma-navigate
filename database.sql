@@ -24,11 +24,12 @@ create table product (
     foreign key (category_id) references category(id)
 );
 
-insert into product (name, price, image, category_id) values ('Test beer', 15.00, 'wheat-bottle-can.png', 1);
-insert into product (name, price, image, category_id) values ('Test beer 1', 10.50, 'wheat-bottle-can.png', 1);
-insert into product (name, price, image, category_id) values ('Test beer 2', 29.99, 'wheat-bottle-can.png', 2);
-insert into product (name, price, image, category_id) values ('Test beer 3', 18.00, 'wheat-bottle-can.png', 3);
-insert into product (name, price, image, category_id) values ('Test beer 4', 19.99, 'wheat-bottle-can.png', 4);
+insert into product (name, price, image, category_id) values ('Test beer 1', 15.00, 'wheat-bottle-can.png', 1);
+insert into product (name, price, image, category_id) values ('Test beer 2', 10.50, 'wheat-bottle-can.png', 1);
+insert into product (name, price, image, category_id) values ('Test beer 3', 29.99, 'wheat-bottle-can.png', 2);
+insert into product (name, price, image, category_id) values ('Test beer 4', 18.00, 'wheat-bottle-can.png', 3);
+insert into product (name, price, image, category_id) values ('Test beer 5', 19.99, 'wheat-bottle-can.png', 4);
+insert into product (name, price, image, category_id) values ('Test beer 6', 9.99, 'wheat-bottle-can-png', 1);
 
 create table customer (
     id int primary key not null AUTO_INCREMENT,
