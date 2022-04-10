@@ -29,7 +29,7 @@ insert into product (name, price, image, category_id) values ('Test beer 2', 10.
 insert into product (name, price, image, category_id) values ('Test beer 3', 29.99, 'wheat-bottle-can.png', 2);
 insert into product (name, price, image, category_id) values ('Test beer 4', 18.00, 'wheat-bottle-can.png', 3);
 insert into product (name, price, image, category_id) values ('Test beer 5', 19.99, 'wheat-bottle-can.png', 4);
-insert into product (name, price, image, category_id) values ('Test beer 6', 9.99, 'wheat-bottle-can-png', 1);
+insert into product (name, price, image, category_id) values ('Test beer 6', 9.99, 'wheat-bottle-can.png', 1);
 
 create table customer (
     id int primary key not null AUTO_INCREMENT,
